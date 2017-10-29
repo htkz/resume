@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     </head>
     <body>
         <div class="topNavBar">
@@ -79,11 +80,91 @@
                 </div>
             </footer>
         </div>
+        <div class="download">
+            <a href="#">DOWNLOAD RESUME</a>
+            <!-- <a href="#">下载简历</a> -->
+        </div>
+        <div class="selfIntro" style="font-family: kai;">
+             孙默，小白前端，目前大四，正在努力奋斗争取找到工作。
+             <br>
+             技能：前端开发，Node.js开发，django开发。
+        </div>
+        <div class="skills">
+            <header>
+                <h2>Professional Skills</h2>
+            </header>
+            <div class="content">
+                <ul>
+                    <li>
+                        <p>WordPress</p>
+                        <div class="bar">
+                            <div class="realBar" style="width:80%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>HTML & CSS</p>
+                        <div class="bar">
+                            <div class="realBar" style="width:90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>JavaScript</p>
+                        <div class="bar">
+                            <div class="realBar" style="width:60%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>PHP & MySQL</p>
+                        <div class="bar">
+                            <div class="realBar" style="width:95%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Drupal</p>
+                        <div class="bar">
+                            <div class="realBar" style="width:70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Photoshop</p>
+                        <div class="bar">
+                            <div class="realBar" style="width:92%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="portfolio">
+            <header>
+                <h2>Portfolio</h2>
+            </header>
+            <div class="content">
+                <nav>
+                    <li id="li-1">All</li>
+                    <li id="li-2">PHOTOGRAPHY</li>
+                    <li id="li-3">UX DESIGN</li>
+                </nav>
+                <div class="bar">
+                    <div class="realBar"></div>
+                </div>
+                <div class="works" style="height: 600px;">
+                    <div class="big" style="top: 0; left: 0;">
+                        <img src="./img/work1.jpg" alt="作品1">
+                    </div>
+                    <div class="small" style="top: 0; left: 648px;">
+                        <img src="./img/work2.jpg" alt="作品2">
+                    </div>
+                    <div class="small" style="top: 308px; left: 648px;">
+                        <img src="./img/work3.jpg" alt="作品3">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="test" style="height:300px;">
 
         </div>
 
 
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
