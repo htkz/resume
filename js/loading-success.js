@@ -1,0 +1,1 @@
+$('.welcome-loading').removeClass('show');
