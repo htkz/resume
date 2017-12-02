@@ -1,3 +1,14 @@
+// sticky top nav bar
+$(window).on('scroll', function(event) {
+    var topOffset = $(this).scrollTop();
+    if (topOffset > 0) {
+        $('#topNavBar').addClass('sticky');
+    } else {
+        $('#topNavBar').removeClass('sticky');
+    }
+});
+
+// portfolio animation
 $('#li-1').click(function(event) {
     $('.portfolio .realBar').animate({'margin-left': 0, width: '10%'}, 700)
 });
