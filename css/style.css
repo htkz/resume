@@ -27,7 +27,7 @@ a {
     clear: both;
 }
 
-.topNavBar nav li {
+.topNavBar nav>li {
     list-style-type: none;
     float: left;
     margin: 0 17px;
@@ -49,7 +49,8 @@ a {
     position: relative;
 }
 
-.topNavBar nav li a:hover::after {
+.topNavBar nav li a:hover::after,
+.topNavBar li ul li:hover::after {
     content: '';
     display: block;
     position: absolute;
@@ -102,13 +103,49 @@ a {
     margin-right: 3px;
 }
 
+.topNavBar li {
+    position: relative;
+    word-break: keep-all;
+}
+
+.topNavBar .sub-menu {
+    display: none;
+    position: absolute;
+    padding-top: 4px;
+    background-color: #fff;
+    color: #3d4451;
+    font-size: 14px;
+    padding: 5px 10px;
+    right: 0;
+    animation: subMenuSlid .2s linear;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes subMenuSlid {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.topNavBar .sub-menu li {
+    cursor: pointer;
+    position: relative;
+    margin-top: 3px;
+}
+
+.topNavBar li:hover .sub-menu {
+    display: block;
+}
+
 
 .banner {
-    background-image: url('http://rscardwp.px-lab.com/wp-content/uploads/2016/02/rs-cover.jpg');
+    background-image: url('../img/banner.jpg');
     background-size: cover;
     background-position: center;
     height: 520px;
-    /*position: relative;*/
 }
 
 .mask{
