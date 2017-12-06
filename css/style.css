@@ -340,12 +340,18 @@ header h2 {
     background-color: #fae1e1;
     height: 5px;
     border-radius: 3px;
+    overflow: hidden;
 }
 
 .skills .realBar {
     height: 5px;
     background-color: #e86767;
     border-radius: 3px;
+    transition: all 1s;
+}
+
+.skills.slideAppear .realBar {
+    transform: translateX(-100%);
 }
 
 .portfolio header {
