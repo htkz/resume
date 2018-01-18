@@ -1,22 +1,38 @@
+//
+//                       _oo0oo_
+//                      o8888888o
+//                      88" . "88
+//                      (| -_- |)
+//                      0\  =  /0
+//                    ___/`---'\___
+//                  .' \\|     |// '.
+//                 / \\|||  :  |||// \
+//                / _||||| -:- |||||- \
+//               |   | \\\  -  /// |   |
+//               | \_|  ''\---/''  |_/ |
+//               \  .-\__  '-'  ___/-. /
+//             ___'. .'  /--.--\  `. .'___
+//          ."" '<  `.___\_<|>_/___.' >' "".
+//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//         \  \ `_.   \_ __\ /__ _/   .-` /  /
+//     =====`-.____`.___ \_____/___.-`___.-'=====
+//                       `=---='
+//
+//
+//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//               佛祖保佑         永无BUG
+//
+//
+//
 // sticky top nav bar
 $(window).on('scroll', function(event) {
-    var topOffset = $(this).scrollTop();
+    const topOffset = $(this).scrollTop();
     if (topOffset > 0) {
         $('#topNavBar').addClass('sticky');
     } else {
         $('#topNavBar').removeClass('sticky');
     }
-});
-
-// portfolio animation
-$('#li-1').click(function(event) {
-    $('.portfolio .realBar').animate({'margin-left': 0, width: '10%'}, 700)
-});
-$('#li-2').click(function(event) {
-    $('.portfolio .realBar').animate({'margin-left': '58px', width: '47%'}, 700)
-});
-$('#li-3').click(function(event) {
-    $('.portfolio .realBar').animate({'margin-left': '222px', width: '26%'}, 700)
 });
 
 // slide after ckick nav item
